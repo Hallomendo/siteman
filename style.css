@@ -1,4 +1,4 @@
-/* 🌐 استایل پایه */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 🌌 سه لایه ستاره‌ها */
+
 .stars, .stars2, .stars3 {
   position: fixed;
   top: 0;
@@ -102,7 +102,7 @@ body {
   50% {transform: translateY(-20px);}
 }
 
-/* ===== هدر ===== */
+
 header {
   position: fixed;
   width: 100%;
@@ -125,7 +125,7 @@ header nav a:hover {
   color: #ff7efc;
 }
 
-/* ===== بخش قهرمان (Hero) ===== */
+
 .hero {
   text-align: center;
   padding: 2rem;
@@ -138,7 +138,7 @@ header nav a:hover {
   animation: float 4s ease-in-out infinite;
 }
 
-/* ===== بخش‌های عمومی ===== */
+
 section {
   min-height: 100vh;
   display: flex;
@@ -161,7 +161,7 @@ p {
   text-align: center;
 }
 
-/* ===== فوتر ===== */
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -171,7 +171,7 @@ footer {
   position: relative;
 }
 
-/* ===== نمونه‌کار ===== */
+
 #portfolio {
   padding: 2rem 4rem;
   background-color: rgba(0,0,0,0.3);
@@ -216,7 +216,7 @@ footer {
   font-size: 0.95rem;
 }
 
-/* ===== واکنش‌گرایی: تبلت ===== */
+
 @media (max-width: 1024px) {
   section {
     padding: 1.5rem 2rem;
@@ -231,7 +231,7 @@ footer {
   }
 }
 
-/* ===== موبایل ===== */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -270,7 +270,7 @@ footer {
   }
 }
 
-/* ===== موبایل کوچک ===== */
+
 @media (max-width: 480px) {
   .hero img {
     width: 120px;
@@ -286,5 +286,40 @@ footer {
 
   p {
     font-size: 0.9rem;
+  }
+}
+
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .header nav {
+    font-size: 14px;
   }
 }
