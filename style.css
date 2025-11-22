@@ -86,7 +86,6 @@ body {
   animation: animStar 150s linear infinite, twinkle 4s ease-in-out infinite;
 }
 
-/* انیمیشن‌ها */
 @keyframes animStar {
   from {transform: translateY(0);}
   to {transform: translateY(-2000px);}
@@ -323,3 +322,4 @@ img, video, iframe {
     font-size: 14px;
   }
 }
+
